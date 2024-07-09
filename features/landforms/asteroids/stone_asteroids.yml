@@ -1,0 +1,24 @@
+id: STONE_ASTEROIDS
+type: FEATURE
+
+distributor:
+  type: AND
+  distributors:
+    - type: PADDED_GRID
+      width: 8
+      padding: 5
+      salt: 1923
+
+locator:
+  type: RANDOM
+  amount:
+    min: 0
+    max: 2
+  height:
+    min: 70
+    max: 90
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: asteroid

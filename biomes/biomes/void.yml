@@ -1,0 +1,15 @@
+id: VOID
+type: BIOME
+extends: [ BASE_VOID ]
+
+vanilla: minecraft:the_end
+
+palette:
+  - VOID: 319
+  
+features:
+  landforms:
+    - STONE_ASTEROIDS
+    - ASTEROID_BELT
+  entities:
+    - SKELETONS

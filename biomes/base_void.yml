@@ -1,0 +1,23 @@
+id: BASE_VOID
+type: BIOME
+abstract: true
+extends:
+  - ORES_GENERIC
+
+slant-depth: 15
+vars: &variables
+  base: 64
+  height: 10
+
+colors:
+  grass: 0x496b32
+  foliage: 0x496b32
+  sky: 0x7b52a5
+  fog: 0x4D53B2
+
+terrain:
+  sampler:
+    type: EXPRESSION
+    dimensions: 3
+    variables: *variables
+    expression: -y + base

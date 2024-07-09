@@ -1,0 +1,7 @@
+id: VOID
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:air: 1
+    layers: 1

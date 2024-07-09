@@ -1,0 +1,7 @@
+id: DEPOSITS_GENERIC
+type: BIOME
+abstract: true
+
+features:
+  deposits:
+    - TUFF_DEPOSITS

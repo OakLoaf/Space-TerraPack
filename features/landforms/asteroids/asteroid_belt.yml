@@ -1,0 +1,39 @@
+id: ASTEROID_BELT
+type: FEATURE
+
+distributor:
+  type: AND
+  distributors:
+    - type: PADDED_GRID
+      width: 2
+      padding: 2
+      salt: 1923
+    - type: SAMPLER
+      sampler:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.05
+        salt: 12412
+
+locator:
+  type: SAMPLER
+  samplers:
+    - type: ADD
+      left:
+        type: MUL
+        left:
+          type: OPEN_SIMPLEX_2
+          frequency: 0.05
+          salt: 1154
+        right:
+          type: CONSTANT
+          value: 2
+      right:
+        type: CONSTANT
+        value: 80
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: 
+  - BLOCK:minecraft:end_stone: 1
+  #- BLOCK:minecraft:tuff: 1
