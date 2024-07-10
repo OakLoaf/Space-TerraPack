@@ -2,6 +2,7 @@ id: BASE_VOID
 type: BIOME
 abstract: true
 extends:
+  - DEPOSITS_GENERIC
   - ORES_GENERIC
 
 slant-depth: 15
